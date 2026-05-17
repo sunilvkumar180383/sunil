@@ -1,0 +1,149 @@
+/* Image Gallery Admin Styles */
+
+.igm-admin-wrap {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.igm-admin-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.igm-upload-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.igm-upload-section h2 {
+    margin-top: 0;
+}
+
+#igm-upload-btn {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#igm-upload-form {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+#igm-upload-form input[type="text"],
+#igm-upload-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#igm-upload-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+#igm-add-image-btn {
+    width: 100%;
+}
+
+.igm-gallery-list {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.igm-gallery-list h2 {
+    margin-top: 0;
+}
+
+#igm-sortable-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.igm-gallery-list-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 12px;
+    cursor: move;
+    transition: background 0.2s ease;
+}
+
+.igm-gallery-list-item:hover {
+    background: #efefef;
+}
+
+.igm-gallery-list-item.ui-sortable-helper {
+    opacity: 0.7;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.igm-list-item-inner {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.igm-drag-handle {
+    cursor: grab;
+    font-size: 20px;
+    color: #999;
+}
+
+.igm-drag-handle:active {
+    cursor: grabbing;
+}
+
+.igm-list-thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.igm-list-item-info {
+    flex: 1;
+}
+
+.igm-list-item-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.igm-list-item-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.igm-delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.igm-delete-btn:hover {
+    background: #c82333;
+}
+
+@media (max-width: 768px) {
+    .igm-admin-container {
+        grid-template-columns: 1fr;
+    }
+}
