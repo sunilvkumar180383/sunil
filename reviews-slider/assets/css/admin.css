@@ -1,0 +1,47 @@
+/* Admin Styles */
+.reviews-slider-admin {
+    max-width: 1000px;
+}
+
+.form-table th {
+    font-weight: 600;
+}
+
+#review_image_button,
+#review_image_remove {
+    margin-right: 5px;
+}
+
+#review_image_container {
+    margin-bottom: 10px;
+}
+
+#review_image_container img {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+
+.reviews-slider-admin code {
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 10px 0;
+    font-family: monospace;
+    border: 1px solid #ddd;
+}
+
+.reviews-slider-admin h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.reviews-slider-admin ul {
+    margin-left: 20px;
+}
+
+.reviews-slider-admin li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}

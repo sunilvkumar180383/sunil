@@ -1,0 +1,166 @@
+# Copyright (C) 2024 Reviews Slider
+this file is distributed under the same license as the Reviews Slider package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Reviews Slider 1.0.0\n"
+"Report-Msgid-Bugs-To: https://example.com\n"
+"POT-Creation-Date: 2024-01-01 00:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: includes/class-reviews-cpt.php
+msgid "Reviews"
+msgstr ""
+
+msgid "Review"
+msgstr ""
+
+msgid "All Reviews"
+msgstr ""
+
+msgid "View Review"
+msgstr ""
+
+msgid "Add New Review"
+msgstr ""
+
+msgid "Edit Review"
+msgstr ""
+
+msgid "Update Review"
+msgstr ""
+
+msgid "Search Reviews"
+msgstr ""
+
+msgid "No reviews found"
+msgstr ""
+
+msgid "No reviews found in trash"
+msgstr ""
+
+msgid "Customer reviews"
+msgstr ""
+
+msgid "Review Categories"
+msgstr ""
+
+msgid "Review Category"
+msgstr ""
+
+msgid "Search Categories"
+msgstr ""
+
+msgid "All Categories"
+msgstr ""
+
+msgid "Parent Category"
+msgstr ""
+
+msgid "Edit Category"
+msgstr ""
+
+msgid "Update Category"
+msgstr ""
+
+msgid "Add New Category"
+msgstr ""
+
+msgid "New Category Name"
+msgstr ""
+
+msgid "Review Details"
+msgstr ""
+
+msgid "Author Name"
+msgstr ""
+
+msgid "Author Title/Company"
+msgstr ""
+
+msgid "Rating"
+msgstr ""
+
+msgid "Star"
+msgstr ""
+
+msgid "Stars"
+msgstr ""
+
+msgid "Author Image"
+msgstr ""
+
+msgid "Choose Image"
+msgstr ""
+
+msgid "Remove Image"
+msgstr ""
+
+#: includes/class-reviews-admin.php
+msgid "Reviews Slider Settings"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "You do not have permission to access this page."
+msgstr ""
+
+msgid "Items to Show"
+msgstr ""
+
+msgid "Number of reviews to show at a time (1-6)"
+msgstr ""
+
+msgid "Autoplay"
+msgstr ""
+
+msgid "Enable autoplay"
+msgstr ""
+
+msgid "Autoplay Speed (ms)"
+msgstr ""
+
+msgid "Milliseconds between slides"
+msgstr ""
+
+msgid "Show Arrows"
+msgstr ""
+
+msgid "Show navigation arrows"
+msgstr ""
+
+msgid "Show Dots"
+msgstr ""
+
+msgid "Show pagination dots"
+msgstr ""
+
+msgid "How to Use"
+msgstr ""
+
+msgid "Add the following shortcode to any page or post to display the reviews slider:"
+msgstr ""
+
+msgid "Shortcode Options"
+msgstr ""
+
+msgid "Filter by review category"
+msgstr ""
+
+msgid "Limit number of reviews (default: all)"
+msgstr ""
+
+msgid "Order by: date, title, ID"
+msgstr ""
+
+msgid "Order: ASC or DESC"
+msgstr ""
+
+msgid "Example"
+msgstr ""
