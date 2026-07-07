@@ -1,0 +1,36 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Prevent directory listing
+Options -Indexes
+
+# Prevent access to sensitive files
+<FilesMatch "\.php$|\.sql$|\.json$|\.config$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Set proper headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Disable script execution in upload directory
+<Directory "uploads">
+    <FilesMatch "\.(php|phtml|php3|php4|php5|php6|php7|phps|pht|phar|phpt|pgif|shtml|htaccess|phtml|phar)$">
+        Deny from all
+    </FilesMatch>
+</Directory>
+
+# Deny access to config files
+<FilesMatch "^(config|database|migrations)">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>

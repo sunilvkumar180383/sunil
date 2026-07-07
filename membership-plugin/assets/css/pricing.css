@@ -1,0 +1,151 @@
+/* Pricing Page Stylesheet */
+.pricing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pricing-header h1 {
+    font-size: 36px;
+    color: var(--dark-gray);
+    margin-bottom: 10px;
+}
+
+.pricing-header p {
+    font-size: 16px;
+    color: #6b7280;
+}
+
+/* Billing Toggle */
+.billing-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.toggle-label {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.save-badge {
+    background-color: var(--success-color);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Pricing Grid */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.pricing-card {
+    background-color: white;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    transition: all 0.3s;
+    box-shadow: var(--shadow);
+}
+
+.pricing-card:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.pricing-card.featured {
+    border-color: var(--primary-color);
+    transform: scale(1.05);
+    box-shadow: var(--shadow-lg);
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.pricing-card h3 {
+    font-size: 22px;
+    color: var(--dark-gray);
+    margin-bottom: 15px;
+}
+
+.pricing-card .price {
+    margin-bottom: 15px;
+}
+
+.pricing-card .amount {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.pricing-card .period {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.pricing-card .description {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.features-list {
+    list-style: none;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.features-list li {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #374151;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+.features-list .check {
+    color: var(--success-color);
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .pricing-header h1 {
+        font-size: 28px;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+}
